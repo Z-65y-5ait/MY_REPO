@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learning</title>
+</head>
+<body>
+<!--small paragraphs-->
+<small>p</small> 
+<!--en gras-->
+<b>p</b>
+<strong>p</strong>
+<!--italique-->
+<i>p</i>
+<em>p</em>
+<!--yellow mark-->
+<mark>p</mark>
+<!--line-->
+<u>p</u>
+<ins>p</ins>
+<!--line in the middle of the text-->
+<s>p</s>
+<del>p</del>
+<!--a text down-->
+<p>p<sub>o<sub>t</sub></sub></p>
+<!--a text up-->
+<sup>p</sup>
+<!--Deleted text-->
+<del></del>
+<!--headings-->     
+<h1>p</h1>                                    
+<h2>p</h2>
+<h3>p</h3>
+<h4>p</h4>
+<h5>p</h5>
+<h6>p</h6> 
+<!--paragraphs-->
+<p>p</p>
+<!--links-->
+<a href="https://www.w3schools.com">here</a>
+<!--images-->
+<img src="w3schools.jpg">
+<!--empty line (a new line) -->
+<br>
+<!--style for color,font,size,and more-->
+<p style="color:red;">p</p>
+<!--separate content-->
+<hr>
+<!--make any change-->
+<pre>p</pre>
+<!--background color for the hole page-->
+<body style="background-color:powderblue;">p</body>
+<!--background color for the element-->
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+<!--Text Color-->
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+<!--text size-->
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+<!--text alignment-->
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+<!--defines a section that is quoted from another source-->
+<blockquote cite="http://www.worldwildlife.org/who/index.html"></blockquote>
+<!-- short quotation-->
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<!-- for Abbreviations-->
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<!-- for Contact Information-->
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<!--title of a creative work usually renders in italic -->
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<!--used to override the current text direction-->
+<bdo dir="rtl">This text will be written from right to left</bdo>
+<!--Border Color-->
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+<!--CSS can be added to HTML-->
+<p by using the style attribute inside HTML elements
+by using a <style> element in the <head> section
+by using a <link> element to link to an external CSS file> </p>
+<!--To use an external style -->
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--space between the text and the border-->
+p {
+    border: 2px solid powderblue;
+    padding: 30px;
+  }
+<!--space outside the border-->
+p {
+    border: 2px solid powderblue;
+    margin: 50px;
+  }  
+<!--Link to External CSS-->
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<link rel="stylesheet" href="/html/styles.css">
+<!--The target Attribute limks-->
+   <!--The target attribute can have one of the following values:
+            -self -  Opens the document in the same window/tab as it was clicked
+            -blank - Opens the document in a new window or tab
+            -parent - Opens the document in the parent frame
+            -top - Opens the document in the full body of the window-->
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+<!--Relative URLs-->
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<!--Image as a Link-->
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+<!--Link to an Email Address-->
+<a href="mailto:someone@example.com">Send email</a>
+<!--Button as a Link-->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<!--Link Titles-->
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<!--Absolute URLs to link-->
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+<!--Link to a page located in the html folder-->
+<a href="/html/default.asp">HTML tutorial</a>
+<!--Link to a page located in the same folder as the current page-->
+<a href="default.asp">HTML tutorial</a>
+<!--HTML Link Colors-->
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  </style>
+<!--Link Buttons-->
+<style>
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+  </style>
+<!--Create a Bookmark in HTML-->
+<h2 id="C4">Chapter 4</h2>
+<!--add a link to the bookmark ("Jump to Chapter 4")-->
+<a href="#C4">Jump to Chapter 4</a>
+<!-- add a link to a bookmark on another page -->
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+<!--HTML Images-->
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+<img src="img_girl.jpg" alt="Girl in a jacket">
+<img src="img_chania.jpg" alt="Flowers in Chania">
+<!--Image Size - Width and Height-->
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<!--Images in Another Folder-->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+<!--Images on Another Server/Website-->
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+<!--Animated Images-->
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+<!--Image as a Link-->
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+<!--Image Floating-->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+  The image will float to the right of the text.</p>
+  
+  <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+  The image will float to the left of the text.</p>
+<!--Image Maps-->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+<!--The Image-->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<!--Create Image Map-->
+<map name="workmap"></map>
+<!--The Areas-->
+    <!--Shape-->
+       <!--rect - defines a rectangular region-->
+       <area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+       <!--circle - defines a circular region-->
+       <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+       <!--poly - defines a polygonal region-->
+       <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+       <!-- default - defines the entire region-->
+<!--Image Map and JavaScript-->  
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>    
+</body>
+</html>
